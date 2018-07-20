@@ -1,6 +1,6 @@
 {
   "name": "electron-webpack-quick-start",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "dev": "electron-webpack dev",
@@ -8,6 +8,15 @@
     "dist": "yarn compile && electron-builder",
     "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
   },
+  "repository": "https://github.com/easemob/oa-pc",
+  "keywords": [
+    "Electron",
+    "easemob",
+    "start",
+    "oa",
+    "demo"
+  ],
+  "author": "www.easemob.com",
   "dependencies": {
     "source-map-support": "^0.5.5"
   },
@@ -19,5 +28,53 @@
   },
   "resolutions": {
     "webpack-sources": "1.0.1"
+  },
+  "build": {
+    "productName": "环信OA",
+    "appId": "com.hyphenate.oa",
+    "directories": {
+      "output": "build"
+    },
+    "asar": false,
+    "mac": {
+      "category": "your.app.category.type",
+      "icon": "./static/mac/icon.icns"
+    },
+    "dmg": {
+      "contents": [
+        {
+          "x": 130,
+          "y": 220
+        },
+        {
+          "x": 410,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": [
+        "deb",
+        "rpm",
+        "AppImage",
+        "tar.gz"
+      ],
+      "icon": "./static/linux/icons"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": true,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "runAfterFinish": true,
+      "installerIcon": "./static/win/icon.ico",
+      "uninstallerIcon": "./static/win/icon.ico"
+    }
   }
 }

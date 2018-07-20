@@ -1,0 +1,10 @@
+version: 1.0.0
+files:
+  - url: electron-webpack-quick-start-1.0.0-mac.zip
+    sha512: HOPB0WYY8XOpOL3CyMaJKhWtejZi3QjhcRDDHlBYHVqBo7ILQ1AKD6a92wdQvBcjbaHSMXXKstTUcDjKE0qL8g==
+  - url: electron-webpack-quick-start-1.0.0.dmg
+    sha512: 53pr1Y61ek0cIZLuJgbFvKuSHuOJqdnQOL30IGxDQUo133nCZxv/gik6Rak+1NLOnEDes5K+Wweo6STivGK8JQ==
+    size: 50086339
+path: electron-webpack-quick-start-1.0.0-mac.zip
+sha512: HOPB0WYY8XOpOL3CyMaJKhWtejZi3QjhcRDDHlBYHVqBo7ILQ1AKD6a92wdQvBcjbaHSMXXKstTUcDjKE0qL8g==
+releaseDate: '2018-07-20T02:33:53.639Z'

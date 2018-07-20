@@ -1,0 +1,14 @@
+{
+  "name": "electron-webpack-quick-start",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "https://github.com/easemob/oa-pc",
+  "author": "www.easemob.com",
+  "dependencies": {
+    "source-map-support": "^0.5.5"
+  },
+  "resolutions": {
+    "webpack-sources": "1.0.1"
+  },
+  "main": "main.js"
+}
