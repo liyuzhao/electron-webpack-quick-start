@@ -67,12 +67,13 @@
       "icon": "./static/linux/icons"
     },
     "nsis": {
-      "oneClick": true,
+      "oneClick": false,
       "perMachine": true,
       "allowElevation": true,
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
       "runAfterFinish": true,
+      "deleteAppDataOnUninstall": false,
       "installerIcon": "./static/win/icon.ico",
       "uninstallerIcon": "./static/win/icon.ico"
     }
