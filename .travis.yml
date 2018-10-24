@@ -8,7 +8,7 @@ script:
   - npm run dist
 
 before_install: 
-  - npm install
+  - yarn install --networktimeout 1000000
 deploy:
   provider: releases
   api_key:
