@@ -1,8 +1,8 @@
 os: windows
 language: node_js
 node_js: '8'
-script: yarn dist
-before_install: yarn
+script: npm run dist
+before_install: npm install
 deploy:
   provider: releases
   api_key:
