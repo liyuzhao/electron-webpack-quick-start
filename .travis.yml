@@ -1,12 +1,18 @@
 os: windows
 language: node_js
 node_js: '8'
-script: npm run dist
-before_install: npm install
+git:
+    depth: 3
+
+script: 
+  - npm run dist
+
+before_install: 
+  - npm install
 deploy:
   provider: releases
   api_key:
     secure: 1uxzjhYg5w1DYLRnafz4LcQsOHy2ukpHCIx3WFDMpfKYnBBsLR4PjYTNfkdZJ6sAYappz0mUMBDFNpB/g33oc20KyxCt7VmBs1qM5tLOGTh/TAZAAB4JGeBqbnJDtuAPNXPQ2J1tyhvBxE7r6QFSWBTK+iakMLhYCfltG5tT8BtzdD+ovNSqhplEUEvoEl1fUJT0MpGdCL6Nof+lQ+emGkq4RI8U1zYfWi0y+VKrzg9YKU0dTojYk1EwDVpsMsc5q8q7reTZBQxLZ0/Z6wu2ukKpvH0+60AKAtMEHHXRUlL+k/wjBtCNFRbKE38E1BgMsVB7cRlFT0I+rdNvlJYVKSzzW41pqALhs+/TXgMea++MSxtxysESQRNTTB59/DSlfImNjrePZW77l8vmTHN7GzaNR2WC2wcwhVACRDNMz1SzXv5RlfLJx6FSMTptkzJibfeCS/GLgN/sErDQpPTEfvxkv25yU2p2NBvi/NfweNqXlXnTi833OhuXkE1CFcx5hcYw87Ygt+o8qMTpGhjIIzbhddDL2io+bMAa+Mj9KTFidLzMn01GpA3SalzOLMlEpPKkuk+NZ+1GCNLLf+ef2OQHKaINJZMu2HW8tQrTuf0yQ3pUyA9CVk00RniMPL6ESv5IWFqtJTcxv5GH5+TiTlbZvMoD5iG5nJRvRJRFooE=
-  file: ''
+  file: '*.*'
   on:
     repo: liyuzhao/electron-webpack-quick-start
